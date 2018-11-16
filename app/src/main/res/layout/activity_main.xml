@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvMTDG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMTDG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MÁY TÍNH ĐƠN GIẢN "
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvSoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số A:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtSoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/tvSoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số B:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtSoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Cong"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnTru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Tru"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Nhan"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/btnChia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Chia"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/tvKQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết quả"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtKQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
